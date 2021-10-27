@@ -20,4 +20,3 @@ const countLetters = function(input) {
 };
 
 console.log(countLetters('a b b ccc ddd d e ee ee ffffff'));
-assertEqual(countLetters('a b b ccc ddd d e ee ee ffffff'), {a: 1, b: 2, c: 3, d: 4, e: 5, f: 6});
