@@ -33,7 +33,6 @@ const without = function(source, itemsToRemove) {
   //   for (let j = 0; j < itemsToRemove.length; j++) {
   //     if (itemsToRemove[j] === source[i]) {
   //       itemFound = true;
-  //       // outputArray.push(source[i]);
   //     }
   //   }
   //   if (!itemFound) {
@@ -42,10 +41,9 @@ const without = function(source, itemsToRemove) {
   // }
   // return outputArray;
   const outputArray = source.filter(element => !itemsToRemove.includes(element));
-  console.log(outputArray);
-  console.log(source);
+  return outputArray;
 };
 
 
-without(source, itemsToRemove);
+console.log(without(source, itemsToRemove));
 // assertArraysEqual([1, 2, 3], without([1, '1', 2, '2', 3, '3'], ['1', '2', '3']));
