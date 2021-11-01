@@ -1,28 +1,30 @@
-const eqArrays = function(array1, array2) {
-  let output;
-  if (array1.length === array2.length) {
-    for (let i = 0; i < array1.length; i++) {
-      if (array1[i] === array2[i]) {
-        output = true;
-      } else {
-        output = false;
-        return output;
-      }
-    }
-    return output;
-  } else {
-    output = false;
-    return output;
-  }
-};
+// const eqArrays = function(array1, array2) {
+//   let output;
+//   if (array1.length === array2.length) {
+//     for (let i = 0; i < array1.length; i++) {
+//       if (array1[i] === array2[i]) {
+//         output = true;
+//       } else {
+//         output = false;
+//         return output;
+//       }
+//     }
+//     return output;
+//   } else {
+//     output = false;
+//     return output;
+//   }
+// };
 
-const assertArraysEqual = function(array1, array2) {
-  if (eqArrays(array1, array2)) {
-    console.log(`🎾🎾🎾 Assertion Passed: the arrays are the same`);
-  } else {
-    console.log(`🏀🏀🏀 Assertion Failed: the arrays are not the same`);
-  }
-};
+// const assertArraysEqual = function(array1, array2) {
+//   if (eqArrays(array1, array2)) {
+//     console.log(`🎾🎾🎾 Assertion Passed: the arrays are the same`);
+//   } else {
+//     console.log(`🏀🏀🏀 Assertion Failed: the arrays are not the same`);
+//   }
+// };
+
+// returns with middle 1 or two elements of an array depending on array length being odd or even respectively
 
 const middle = function(array) {
   let outputArray = [];
@@ -38,4 +40,6 @@ const middle = function(array) {
   }
 };
 
-console.log(middle([1, 2, 3, 4, 5, 6, 7]));
+// console.log(middle([1, 2, 3, 4, 5, 6, 7]));
+
+module.exports = middle;
