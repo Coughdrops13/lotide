@@ -1,8 +1,12 @@
-const assertEqual = require('../assertEqual');
+const assert = require('chai').assert;
 
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);
-assertEqual('Donut', 'Donut');
-assertEqual(1, '1');
-assertEqual(1, 2);
+describe('#assertEqual', () => {
+  it('should return true when two compared strings are identical', () => {
+    assert.strictEqual('Donut', 'Donut');
+  });
+  it('should return false when two compared strings are not identical', () => {
+    assert.notStrictEqual('Lighthouse Labs', 'Bootcamp');
+  })
+});
+
 
