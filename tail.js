@@ -1,26 +1,19 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`🎾🎾🎾 Assertion Passed: ${actual} === ${expected}.`);
-  } else {
-    console.log(`🏀🏀🏀 Assertion Failed: ${actual} !== ${expected}.`);
-  }
-};
+
 
 const tail = function(array) {
   let arrayTail = [];
-  if (array === []) {
-    return [];
+  if (array.length === 0) {
+    return arrayTail;
   } else if (array.length === 1) {
-    return [];
+    return arrayTail;
   } else {
-    for (let i = 1; i < array.length; i ++) {
+    for (let i = 1; i < array.length; i++) {
       arrayTail.push(array[i]);
     }
     return arrayTail;
   }
 };
 
-const words = [];
-console.log(tail(words));
-assertEqual(words.length, 0);
-console.log(words.length);
+// console.log(tail([1, 3, 5]));
+
+module.exports = tail;
