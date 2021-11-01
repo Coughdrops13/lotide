@@ -19,4 +19,6 @@ const countLetters = function(input) {
   return results;
 };
 
-console.log(countLetters('a b b ccc ddd d e ee ee ffffff'));
+// console.log(countLetters('a b b ccc ddd d e ee ee ffffff'));
+
+module.exports = countLetters;

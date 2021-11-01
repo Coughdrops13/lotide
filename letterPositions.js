@@ -1,28 +1,28 @@
-const eqArrays = function(array1, array2) {
-  let output;
-  if (array1.length === array2.length) {
-    for (let i = 0; i < array1.length; i++) {
-      if (array1[i] === array2[i]) {
-        output = true;
-      } else {
-        output = false;
-        return output;
-      }
-    }
-    return output;
-  } else {
-    output = false;
-    return output;
-  }
-};
+// const eqArrays = function(array1, array2) {
+//   let output;
+//   if (array1.length === array2.length) {
+//     for (let i = 0; i < array1.length; i++) {
+//       if (array1[i] === array2[i]) {
+//         output = true;
+//       } else {
+//         output = false;
+//         return output;
+//       }
+//     }
+//     return output;
+//   } else {
+//     output = false;
+//     return output;
+//   }
+// };
 
-const assertArraysEqual = function(array1, array2) {
-  if (eqArrays(array1, array2)) {
-    console.log(`🎾🎾🎾 Assertion Passed: the arrays are the same`);
-  } else {
-    console.log(`🏀🏀🏀 Assertion Failed: the arrays are not the same`);
-  }
-};
+// const assertArraysEqual = function(array1, array2) {
+//   if (eqArrays(array1, array2)) {
+//     console.log(`🎾🎾🎾 Assertion Passed: the arrays are the same`);
+//   } else {
+//     console.log(`🏀🏀🏀 Assertion Failed: the arrays are not the same`);
+//   }
+// };
 
 const letterPositions = function(input) {
   let results = {};
@@ -39,4 +39,6 @@ const letterPositions = function(input) {
   return results;
 };
 
-assertArraysEqual(letterPositions('abc defe').e, [5, 7])
+// assertArraysEqual(letterPositions('abc defe').e, [5, 7])
+
+module.exports = letterPositions;

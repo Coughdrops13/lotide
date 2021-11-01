@@ -22,13 +22,13 @@ const eqArrays = function(array1, array2) {
   //   return output;
   // }
 
-const assertArraysEqual = function(array1, array2) {
-  if (eqArrays(array1, array2)) {
-    console.log(`🎾🎾🎾 Assertion Passed: the arrays are the same`);
-  } else {
-    console.log(`🏀🏀🏀 Assertion Failed: the arrays are not the same`);
-  }
-};
+// const assertArraysEqual = function(array1, array2) {
+//   if (eqArrays(array1, array2)) {
+//     console.log(`🎾🎾🎾 Assertion Passed: the arrays are the same`);
+//   } else {
+//     console.log(`🏀🏀🏀 Assertion Failed: the arrays are not the same`);
+//   }
+// };
 
 //  const words = ["ground", "control", "to", "major", "tom"];
 const firstLetter = function(element) {
@@ -43,7 +43,8 @@ const map = function(array, callback) {
   return results;
 };
 
-console.log(map(['one', 'two', 'three', 'four'], firstLetter));
+// console.log(map(['one', 'two', 'three', 'four'], firstLetter));
 
-assertArraysEqual(map(['one', 'two', 'three', 'four'], firstLetter), ['o', 't', 't', 'f']);
+// assertArraysEqual(map(['one', 'two', 'three', 'four'], firstLetter), ['o', 't', 't', 'f']);
 
+module.exports = map;
