@@ -12,7 +12,8 @@ const findKey = function(object, callback) {
   let result = false;
   for (const key of keyArray) {
     if (callback(object[key])) {
-      console.log(key);
+      // console.log(key);
+      result = true;
       return result;
     } 
   }

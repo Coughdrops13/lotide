@@ -39,6 +39,9 @@ const letterPositions = function(input) {
   return results;
 };
 
+const dumb = 'abdddddd';
+console.log(letterPositions(dumb));
+
 // assertArraysEqual(letterPositions('abc defe').e, [5, 7])
 
 module.exports = letterPositions;
